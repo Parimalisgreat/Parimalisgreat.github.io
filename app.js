@@ -68,3 +68,6 @@ $('.nav a').on("click", function (e) {
         scrollTop: $(anchor.attr('href')).offset().top - 50
     }, 1000);
 });
+
+
+
