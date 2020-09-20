@@ -69,5 +69,14 @@ $('.nav a').on("click", function (e) {
     }, 1000);
 });
 
+// Contact send button click
 
+$(".contact-btn").on("click", function (e) {
+    // e.preventDefault();
+    $(".contact-form form input ").value = "";
+    $(".contact-form form textarea").value = "";
+})
 
+// On Scroll Animation
+
+AOS.init();

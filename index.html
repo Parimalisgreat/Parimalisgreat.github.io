@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:wght@300&display=swap"
         rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -18,27 +18,38 @@
 
 <body>
 
+
+
     <header id="header">
         <div id="particles-js"></div>
         <div class="top">
+
             <div class="main">
                 <h1><a href="/">PJ</a></h1>
             </div>
-            <div class="nav">
-                <ul>
-                    <li class="active"><a href="#header" id="first">HOME</a></li>
-                    <li class=""><a href="#about" id="second">ABOUT</a></li>
-                    <li class=""><a href="#skills" id="third">SKILLS</a></li>
-                    <li class=""><a href="#projects" id="fourth">PROJCTS</a></li>
-                    <li class=""><a href="#contact" id="sixth">CONTACT</a></li>
-                </ul>
+            <div class="main-navbar">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li class="active"><a href="#header" id="first">HOME</a></li>
+                        <li class=""><a href="#about" id="second">ABOUT</a></li>
+                        <li class=""><a href="#skills" id="third">SKILLS</a></li>
+                        <li class=""><a href="#projects" id="fourth">PROJECTS</a></li>
+                        <li class=""><a href="#contact" id="sixth">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
+
         </div>
 
         <div class="brief">
             <h2>WELCOME TO MY WEBSITE</h2>
             <h1>I am a <span class="element"></span></h1>
-            <button>RESUME</button>
+            <button><span class="fas fa-download"></span>RESUME</button>
         </div>
 
         <div class="icon-scroll"></div>
@@ -48,10 +59,10 @@
     </header>
 
     <div id="about">
-        <div class="profile-pic">
+        <div class="profile-pic" data-aos="fade-right">
             <img src="./images/profile.jpg" alt="">
         </div>
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-left">
             <h1>Parimal Jichkar</h1>
             <h2>TECH ENTHUSIAST</h2>
             <p><span style="font-size: 30px; font-weight: bold;margin-right: 20px;">Hi!</span>I am Parimal Jichkar , an
@@ -68,12 +79,12 @@
         <h1 class="sec-top">Skills</h1>
         <main>
 
-            <div class="">
+            <div class="" data-aos="fade-up">
                 <i id="icon" class="fa fa-code"></i>
                 <h2 id="icon-h">Web Design</h2>
                 <p>I can create beautiful designs for web applications using designing softwares.</p>
             </div>
-            <div class="">
+            <div class="" data-aos="fade-up">
 
                 <i id="icon" class="fab fa-react"></i>
                 <h2 id="icon-h">Front-End Development</h2>
@@ -81,22 +92,22 @@
                     , wow.js
                     etc. Moreover,I prefer using React as framework.</p>
             </div>
-            <div class="">
+            <div class="" data-aos="fade-up">
                 <i id="icon" class="fab fa-node"></i>
                 <h2 id="icon-h">Back-End Development</h2>
                 <p>I use NodeJS , ExpressJS for server side interactions.</p>
             </div>
-            <div class="">
+            <div class="" data-aos="fade-up">
                 <i id="icon" class="fa fa-database"></i>
                 <h2 id="icon-h">Databases</h2>
                 <p>My skills in Database include Mongoose, MongoDB and MYSQL.</p>
             </div>
-            <div class="">
+            <div class="" data-aos="fade-up">
                 <i id="icon" class="fab fa-cuttlefish"></i>
                 <h2 id="icon-h">Competitive Coding</h2>
                 <p>I code majorly in C++. But have also coded in Python.</p>
             </div>
-            <div>
+            <div data-aos="fade-up">
                 <i id="icon" class="fas fa-mobile"></i>
                 <h2 id="icon-h">Fully Responsive</h2>
                 <p>Can build fully responsive beautiful websites.</p>
@@ -106,7 +117,7 @@
     <div id="projects">
         <h1 class="sec-top">Projects</h1>
         <div class="container">
-            <div class="elements">
+            <div class="elements" data-aos="fade-up">
                 <img src="./images/tom1.jpg" alt="">
                 <div class="inner">
                     <h1>Drum Kit</h1>
@@ -114,35 +125,35 @@
                         VanillaJS.</p>
                 </div>
             </div>
-            <div class="elements">
+            <div class="elements" data-aos="fade-up">
                 <img src="./images/blog.jpg" alt="">
                 <div class="inner">
                     <h1>Blog Website</h1>
                     <p>Made a blog website using NodeJS and expresJS .</p>
                 </div>
             </div>
-            <div class="elements">
+            <div class="elements" data-aos="fade-up">
                 <img src="./images/weather.jpg" alt="">
                 <div class="inner">
                     <h1>Weather App .</h1>
                     <p>Made a weather App using a third party API and hosted on heroku.</p>
                 </div>
             </div>
-            <div class="elements">
+            <div class="elements" data-aos="fade-up">
                 <img src="./images/todo.jpg" alt="">
                 <div class="inner">
                     <h1>Todo List.</h1>
                     <p>Made a todo list app which can store custom Todos of different users in database.</p>
                 </div>
             </div>
-            <div class="elements">
+            <div class="elements" data-aos="fade-up">
                 <img src="./images/dice.jpg" alt="">
                 <div class="inner">
                     <h1>Dicee game.</h1>
                     <p>A game using VanillaJS which shows random dice numbers.</p>
                 </div>
             </div>
-            <div class="elements">
+            <div class="elements" data-aos="fade-up">
                 <img src="./images/piz1.jpg" alt="">
                 <div class="inner">
                     <h1>Title</h1>
@@ -152,10 +163,76 @@
         </div>
     </div>
 
+    <div id="contact">
+        <h1 class="sec-top">Contact</h1>
+        <div class="contact-container">
+            <div class="maps" data-aos="fade-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.5896946801254!2d81.6090056!3d21.248113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dde238b4d851%3A0xadb246ff9976141!2sHostel%20D%20(Malhar)!5e0!3m2!1sen!2sin!4v1600191907249!5m2!1sen!2sin"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="contact-form" data-aos="fade-left">
+                <h3>If you have any interesting project to work on , or any job opportunity feel free to contact:</h3>
+                <form action="mailto:pegasisbean@gmail.com" method="post" enctype="text/plain">
+
+                    <input type="text" name="name" placeholder="Name" class="cname" autocomplete="off"><br>
+
+                    <input type="email" name="mail" placeholder="Email" class="cemail" autocomplete="off"><br>
+
+                    <textarea type="text" name="message" placeholder="Message..." autocomplete="off"></textarea>
+                    <br>
+                    <button type="submit" class="contact-btn">Send</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="footer">
+        <h1 class="sec-top">Stalk me!</h1>
+
+
+
+        <ul data-aos="fade-up">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100010136591944" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    <p>Facebook</p>
+                </a>
+
+            </li>
+            <li>
+                <a href="https://github.com/Parimalisgreat" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <p>Github</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/parimal-jichkar-179389191/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                </a>
+
+            </li>
+            <li>
+                <a href="https://twitter.com/JichkarParimal" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <p>Twitter</p>
+                </a>
+
+            </li>
+        </ul>
+
+
+
+    </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
 </body>
 
