@@ -4,8 +4,8 @@ body {
     font-family: 'Poppins', sans-serif;
     position: relative;
     width: 100%;
-    overflow-x: hidden;
-
+    box-sizing: border-box;
+    overflow-x: hidden !important;
 }
 
 a {
@@ -38,15 +38,18 @@ header {
     color: white;
     font-weight: bold;
     position: fixed;
-    padding-left: 10%;
-
+    margin-right: 0;
+    /* padding-left: 10%; */
+    /* overflow-x: hidden; */
+    justify-content: space-around;
 
 
 }
 
 .main-navbar {
-    margin-left: 400px;
-    margin-right: 20px;
+    /* margin-left: 400px;
+    margin-right: 20px; */
+    width: 40%;
 
 }
 
@@ -57,9 +60,9 @@ header {
 }
 
 .nav {
-    padding-left: 45%;
-
-    z-index: 1;
+    /* padding-left: 45%; */
+    /* padding-right: 0%; */
+    /* z-index: 1; */
 }
 
 
@@ -69,7 +72,7 @@ header {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-
+    justify-content: space-around;
 }
 
 
@@ -82,8 +85,11 @@ header {
 .hamburger {
     position: absolute;
     top: 10px;
-    right: 200px;
+    /* right: 200px; */
+    left: 20px;
     display: none;
+    cursor: pointer;
+
 
 }
 
@@ -419,6 +425,7 @@ header {
 
 #contact .maps {
     width: 40%;
+
 }
 
 .contact-container {
@@ -518,28 +525,41 @@ textarea {
 
 
 
+
+
+
 @media screen and (max-width: 1331px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .main-navbar .nav ul {
         position: absolute;
         flex-direction: column;
         text-align: center;
-        width: 30%;
-        left: 14%;
+        /* width: 30%; */
+        /* left: 20%; */
+        margin: auto;
 
     }
 
     .main-navbar .nav li {
-        margin: 40px;
+
+        margin: auto;
+        padding-top: 80px;
     }
 
     .main-navbar .nav {
         position: absolute;
         background-color: black;
-        top: 70px;
+        top: 0px;
         left: 0px;
-        width: 100%;
+        width: 30%;
         height: 100vh;
-        display: none;
+        transform: translateX(-100%);
+        overflow-x: hidden;
+        transition: opacity 0.5s ease-in;
+        /* display: none; */
 
     }
 
@@ -628,6 +648,8 @@ textarea {
     }
 
 }
+
+
 
 @media screen and (max-width: 651px) {
 
@@ -725,5 +747,10 @@ textarea {
         font-size: 20px;
         padding-top: 10px;
     }
+
+}
+
+.nav-active-slide {
+    transform: translateX(0%);
 
 }

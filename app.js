@@ -77,6 +77,17 @@ $(".contact-btn").on("click", function (e) {
     $(".contact-form form textarea").value = "";
 })
 
+//Nav mobile
+
+$(".hamburger").on('click', () => {
+    $(".nav").toggleClass('nav-active-slide');
+
+});
+
+
+
 // On Scroll Animation
 
 AOS.init();
+
+
