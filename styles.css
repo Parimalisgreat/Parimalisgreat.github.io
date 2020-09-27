@@ -597,7 +597,8 @@ textarea {
     }
 
     .contact-form form button {
-        margin-left: 42%;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 
 
@@ -625,7 +626,8 @@ textarea {
     }
 
     .contact-form form button {
-        margin-left: 40%;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 
     #skills main {
@@ -688,7 +690,8 @@ textarea {
     }
 
     .contact-form form button {
-        margin-left: 33%;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 
 
@@ -735,7 +738,8 @@ textarea {
     }
 
     .contact-form form button {
-        margin-left: 20%;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 
     #footer li {
@@ -747,6 +751,7 @@ textarea {
         font-size: 20px;
         padding-top: 10px;
     }
+    
 
 }
 
