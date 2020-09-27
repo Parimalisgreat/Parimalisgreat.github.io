@@ -47,7 +47,7 @@ for (var i = 0; i < links.length; i++) {
 $(document).scroll(function () {
     var st = $(this).scrollTop();
 
-    $(".nav ul").forEach(function () {
+    $(".nav ul").each(function () {
         if (st > $(this).offset().top && st <= $(this).offset().top + $(this).height()) {
             var id = $(this).attr('id');
             $('a[href="#' + id + '"]').addClass('active');
